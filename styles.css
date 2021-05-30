@@ -29,6 +29,7 @@ img {
     min-width: 0.5vw;
     max-width: 4vw;
     padding-bottom: 0.5vw;
+    border: none;
 }
 
 .header {
