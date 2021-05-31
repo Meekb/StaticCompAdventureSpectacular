@@ -9,13 +9,6 @@
     min-height: 100%;
 }
 
-.logo {
-    min-width: 0.5vw;
-    max-width: 4vw;
-    padding-bottom: 0.5vw;
-    border: none;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -32,11 +25,18 @@
 }
 
 .navigate {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-end;
-    width: 35vw;
+    align-items: flex-start;
+    padding-left: 3.5%;
+}
+
+.nav-dash {
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .nav-dash,
@@ -44,32 +44,32 @@
     color: color: #rgb(3 101 117);
 }
 
-.nav-dash {
-    font-size: 20px;
-    margin-bottom: 12%;
-    padding-left: 5%;
+.logo {
+    width: 15%;
+    padding-left: 85%;
 }
 
 .admin-text {
     font-size: 20px;
 }
 .admin-logo {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 65vw;
-    padding-right: 3vw;
-    margin-bottom: 20px;
+    padding-right: 4vw;
+    margin-top: 12px;
+    margin-bottom: 15px;
 }
 
 .btn {
-    width: 35%;
-    height: 30%;
+    width: 150px;
+    height: 45px;
     border: none;
-    border-radius: 30px;
-    margin-right: 2%;
-    margin-bottom: 10%;
-    font-size: 16px;
+    border-radius: 35px;
+    margin-left: 9%;
+    margin-bottom: 15px;
+    font-size: 18px;
     font-weight: bold;
     background-color: black;
     opacity: 60%;
@@ -162,27 +162,33 @@
 }
 
 /* MEDIA QUERIES*/
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1024px) {
     .nav-dash {
-        font-size: 20px;
-        margin-bottom: 12%;
-        padding-left: 5%;
+        width: 100%;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 2%;
+        padding-left: 1%;
     }
     .btn {
-        width: 35%;
-        font-size: 14px;
+        font-size: 18px;
+        border-radius: 35px;
     }
-    .user-card-row{
+    .logo {
+        width: 15%;
+        padding-left: 75%;
+    }
+    .user-card-row {
         width: 100%;
         flex-wrap: wrap;
     }
     .user-card {
-        min-width: 35%;
+        width: 25%;
     }
     .image-container {
         width: 100%;
     }
-    img {
+    image {
         width: 100%;
     }
     .name {
@@ -194,30 +200,40 @@
     }
 
 
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: 768px) {
         .nav-dash {
             font-size: 20px;
-            margin-bottom: 12%;
-            padding-left: 5%;
+            margin-bottom: 3%;
         }
         .header-main-page {
             font-size: 60px;
         }
         .btn {
-            width: 45%;
-            font-size: 16px;
+            width: 95px;
+            font-size: 14px;
+        }
+        .logo {
+            width: 25%;
+            padding-left: 72%;
+        }
+        .admin-logo{
+            margin-top: 1px;
+        }
+        .admin-text {
+            font-size: 18px;
+            margin-top: 1%;
         }
         .user-card-row{
             width: 100%;
             flex-wrap: wrap;
         }
         .user-card {
-            min-width: 35%;
+            min-width: 40%;
         }
         .image-container {
             width: 100%;
         }
-        img {
+        .image {
             width: 100%;
         }
         .image-overlay {
@@ -230,47 +246,56 @@
             font-size: 18px;
             text-align: center;
         }
-
-        @media only screen and (max-width: 550px) {
-            .nav-dash {
-                font-size: 20px;
-                margin-bottom: 12%;
-                padding-left: 5%;
-            }
-            .header-main-page {
-                font-size: 45px;
-            }
-            .btn {
-                width: 65%;
-                font-size: 16px;
-            }
-            .user-card-row{
-                width: 100%;
-                flex-wrap: wrap;
-            }
-            .user-card {
-                min-width: 75%;
-            }
-            .image-container {
-                width: 100%;
-            }
-            img {
-                width: 100%;
-            }
-            .image-overlay {
-                padding-left: 20%;
-                font-size: 14px;
-            }
-            .name {
-                font-size: 22px;
-            }
-            .power-text {
-                font-size: 18px;
-                text-align: center;
-            }
-    
-    
-
+        
+    @media only screen and (max-width: 480px) {
+        .nav-dash {
+            font-size: 18px;
+            padding-left: 5%;
+        }
+        .btn {
+            font-size: 16px;
+        }
+        .logo {
+            width: 20%;
+            padding-left: 72%;
+        }
+        .admin-text {
+            padding-top: 20%;
+            font-size: 14px;
+        }
+        .admin-logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: right;
+            width: 100%;
+        }
+        .header-main-page {
+            font-size: 35px;
+        }
+        .user-card-row{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .user-card {
+            min-width: 75%;
+        }
+        .image-container {
+            width: 100%;
+        }
+        .image {
+            width: 100%;
+        }
+        .image-overlay {
+            font-size: 14px;
+        }
+        .name {
+            font-size: 22px;
+        }
+        .power-text {
+            font-size: 16px;
+            text-align: center;
+        }
 }
 
 
