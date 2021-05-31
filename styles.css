@@ -2,6 +2,7 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    /* border: 2px solid forestgreen; */
 }
 
 .body, html {
@@ -22,14 +23,10 @@
 }
 
 .header-main-page {
-    width: 90%;
-    margin-right: 10vw;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-left: 8%;
-    font: "Helvetica Neue Heavy";
-    font-size: 90px;
+    font-size: 85px;
     font-weight: bold;
     color: #5f5f5f;
 }
@@ -48,9 +45,9 @@
 }
 
 .nav-dash {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 12%;
-    padding-left: 7%;
+    padding-left: 5%;
 }
 
 .admin-text {
@@ -77,6 +74,7 @@
     background-color: black;
     opacity: 60%;
     color: #4df0f9;
+    cursor: pointer;
 }
 
 .admin-text {
@@ -93,19 +91,15 @@
 .user-card-row {
     width: 100%;
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
 }   
 
 .user-card {
     margin: 0.5vw 2vw 1vw 2vw;
-    width: 32vw;
-    min-width: 20%;
-    max-width: 25%;
-    min-height: 10%;
-    max-height: 45%;
+    width: 25%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     box-shadow: 0 8px 10px 0 #5f5f5f, 0 8px 22px 0 #5f5f5f;
     border: 6px solid #5f5f5f;
@@ -114,22 +108,17 @@
 
 .image-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
-img {
+.image {
     display: block;
-    max-width: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    min-height: 25%;
+    width: 100%;
     border-bottom: 6px solid #5f5f5f;
-}
-
-.icon {
-    /* position: absolute; */
-    width: 1vw;
-    height: 1vw;
 }
 
 .image-overlay {
@@ -141,7 +130,6 @@ img {
     font-weight: bold;
     color: #4df0f9;   
     padding-bottom: 10px;
-    padding-left: 27%;
     transition: 0.5s ease;
 }
 
@@ -150,9 +138,10 @@ img {
 }
 
 .stats {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -163,189 +152,124 @@ img {
 }
 
 .power-text {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
 .mod {
     font-size: 16px;
-    /* font-weight: bold; */
 }
 
-/* Breakpoints */
-
-@media only screen and (max-width: 768px) {
+/* MEDIA QUERIES*/
+@media only screen and (max-width: 1100px) {
     .nav-dash {
-        font-size: 18px;
-        padding-left: 20px;
+        font-size: 20px;
+        margin-bottom: 12%;
+        padding-left: 5%;
     }
     .btn {
-        max-width: 90px;
-        max-height: 26px;
-        font-size: 10px;
-        margin-bottom: 25px;
-    }
-    .admin-text {
-        font-size: 16px;
-        margin-left: 40%;
-    }
-    .user-card-row {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .user-card {
-        width: 150px;
-        height: 300px;
-        flex-wrap: nowrap;
-    }
-    .stats {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 8px;
-        overflow: scroll;
-    }
-    .name {
-        font-size: 16px;
-        text-align: center;
-    }
-    .power-text {
-        font-size: 12px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .mod {
-        font-size: 8px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .navigate {
-        height: 18px;
-    }
-    .nav-dash {
+        width: 35%;
         font-size: 14px;
-        padding-left: 20px;
     }
-    .header {
-        padding-bottom: 23px;
-    }
-    .btn {
-        width: 90px;
-        height: 26px;
-        font-size: 10px;
-        margin-bottom: 3%;
-    }
-    .admin-text {
-        font-size: 12px;
-        margin-left: 40%;
-    }
-    .admin-logo {
-        justify-content: space-evenly;
-    }
-    .logo {
-        padding-top: 5px;
-    }
-    .header-main-page {
-        font-size: 25px;
-    }
-    .user-card-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+    .user-card-row{
+        width: 100%;
+        flex-wrap: wrap;
     }
     .user-card {
-        width: 300px;
-        height: 32vw;
-        flex-wrap: nowrap;
+        min-width: 35%;
     }
-    .image {
-        display: none;
-    }
-    .beth {
-        background: URL(assets/Meekb.jpeg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .ash {
-        background: URL(assets/Ash.jpeg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .riley {
-        background: URL(assets/Riley.jpeg); 
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .fara {
-        background: URL(assets/Fara.jpeg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .berg {
-        background: URL(assets/Berg.jpeg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .eva {
-        background: URL(assets/Eva.jpeg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .erica {
-        background: URL(assets/Erica.jpeg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .darla {
-        background: URL(assets/Darla.jpeg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .stats {
-        flex-wrap: wrap;
-        align-items: flex-end;
-        font-size: 9px;
-        margin-left: 50%;
-    }
-    .name {
-        font-size: 16px;
-    }
-    .power-text {
-        font-size: 8px;
-        font-weight: bold;
-    }
-    .mod {
-        font-size: 8px;
-    }
-
     .image-container {
-        position: relative;
         width: 100%;
     }
-
-    .image-overlay {
-        position: relative;
-        bottom: 0;
-        width: : 100%;
-        opacity: 0;
-        font-size: 12px;
-        font-weight: bold;
-        color: #4df0f9;   
-        padding-bottom: 10px;
-        padding-left: 5%;
-        transition: 0.5s ease;
+    img {
+        width: 100%;
     }
+    .name {
+        font-size: 22px;
+    }
+    .power-text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    @media only screen and (max-width: 760px) {
+        .nav-dash {
+            font-size: 20px;
+            margin-bottom: 12%;
+            padding-left: 5%;
+        }
+        .header-main-page {
+            font-size: 60px;
+        }
+        .btn {
+            width: 45%;
+            font-size: 16px;
+        }
+        .user-card-row{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .user-card {
+            min-width: 35%;
+        }
+        .image-container {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
+        .image-overlay {
+            font-size: 14px;
+        }
+        .name {
+            font-size: 22px;
+        }
+        .power-text {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 550px) {
+            .nav-dash {
+                font-size: 20px;
+                margin-bottom: 12%;
+                padding-left: 5%;
+            }
+            .header-main-page {
+                font-size: 45px;
+            }
+            .btn {
+                width: 65%;
+                font-size: 16px;
+            }
+            .user-card-row{
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .user-card {
+                min-width: 75%;
+            }
+            .image-container {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+            }
+            .image-overlay {
+                padding-left: 20%;
+                font-size: 14px;
+            }
+            .name {
+                font-size: 22px;
+            }
+            .power-text {
+                font-size: 18px;
+                text-align: center;
+            }
     
-    .image-container:hover .image-overlay{
-        opacity: 1;
-    }
-
-
-
+    
 
 }
 
