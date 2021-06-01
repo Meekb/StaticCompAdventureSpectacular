@@ -12,7 +12,8 @@ Front-End Project by: [Beth Meeker](https://github.com/Meekb)
 ## Overview
   Turing Trading Cards is a comp challenge designed to flex some muscle in HTML and CSS while utilizing breakpoints for repsonsive design.
   Using a bit of creative license, the deployed page was re-created based off of a provided static comp. Trading Trading Cards feature current 
-  students in Modules 2 and 3 at Turing School of Software and Design. Each Turing Trading Card links to the student's GitHub profile.
+  students in Modules 2 and 3 at Turing School of Software and Design. Each Turing Trading Card links to the student's GitHub profile, and features
+  a coding superpower.
 
 ## Construction
   
