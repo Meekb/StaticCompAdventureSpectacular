@@ -19,8 +19,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 85px;
-    font-weight: bold;
+    font-size: 50px;
     color: #5f5f5f;
     text-shadow: 4px 4px #4df0f9;
 }
@@ -161,7 +160,7 @@
 .name {
     font-size: 25px;
     text-align: center;
-    max-height: 1%;
+    /* max-height: 1%; */
 }
 
 .power-text {
@@ -175,10 +174,13 @@
 }
 
 .git-link {
+    width: 65%;
     border: 3px solid #57b8bd;
     border-radius: 23px;
     background-color: rgb(211, 210, 210);
     padding: 15px;
+    font-size: 13px;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -206,12 +208,16 @@
         width: 15%;
         padding-left: 75%;
     }
+    .header-main-page{
+        font-size: 40px;
+    }
     .user-card-row {
         width: 100%;
         flex-wrap: wrap;
     }
     .user-card {
-        width: 25%;
+        justify-content: space-evenly;
+        width: 45%;
     }
     .image-container {
         width: 100%;
@@ -220,11 +226,14 @@
         width: 100%;
     }
     .name {
-        font-size: 20px;
+        font-size: 25px;
     }
     .power-text {
         font-size: 18px;
         text-align: center;
+    }
+    .git-link {
+        font-size: 16px;
     }
 }
 
@@ -250,6 +259,9 @@
     .admin-text {
         font-size: 18px;
         margin-top: 1%;
+    }
+    .header-main-page{
+        font-size: 30px;
     }
     .user-card-row{
         width: 100%;
@@ -300,7 +312,7 @@
         width: 100%;
     }
     .header-main-page {
-        font-size: 35px;
+        font-size: 15px;
     }
     .user-card-row{
         width: 100%;
