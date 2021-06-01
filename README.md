@@ -2,8 +2,12 @@
 
 ### A Static Comp Challenge
 
-
 Front-End Project by: [Beth Meeker](https://github.com/Meekb)
+
+## Instructions
+  * Clone this repo to your local machine
+  * Type index.html to open the page in browser
+  * Or just visit my deployed page (https://meekb.github.io/TuringTradingCards/)
 
 ## Overview
   Turing Trading Cards is a comp challenge designed to flex some muscle in HTML and CSS while utilizing breakpoints for repsonsive design.
