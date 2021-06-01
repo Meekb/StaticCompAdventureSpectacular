@@ -106,6 +106,12 @@
     border-radius: 7px;
 }
 
+.user-card:hover {
+    box-shadow: 0 8px 22px 0 #a2eef2, 0 8px 22px 0 #a2eef2;
+    border: 6px solid #339fa3;
+    border-radius: 12px;
+}
+
 .image-container {
     position: relative;
     display: flex;
@@ -163,9 +169,17 @@
 
 .git-link {
     border: 3px solid #57b8bd;
-    border-radius: 12px;
+    border-radius: 23px;
     background-color: rgb(211, 210, 210);
     padding: 15px;
+    font-weight: bold;
+}
+
+.git-link:hover {
+    border: 3px solid #57b8bd;
+    background-color: #57b8bd;
+    font-weight: bold;
+    color: black;
 }
 
 /* MEDIA QUERIES*/
@@ -235,7 +249,7 @@
         flex-wrap: wrap;
     }
     .user-card {
-        min-width: 40%;
+        min-width: 45%;
     }
     .image-container {
         width: 100%;
