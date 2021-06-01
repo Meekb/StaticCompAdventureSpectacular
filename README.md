@@ -8,13 +8,16 @@ Front-End Project by: [Beth Meeker](https://github.com/Meekb)
 ## Overview
   Turing Trading Cards is a comp challenge designed to flex some muscle in HTML and CSS while utilizing breakpoints for repsonsive design.
   Using a bit of creative license, the deployed page was re-created based off of a provided static comp. Trading Trading Cards feature current 
-  students in Modules 2 and 3 at Turing School of Software and Design.
+  students in Modules 2 and 3 at Turing School of Software and Design. Each Turing Trading Card links to the student's GitHub profile.
 
 ## Construction
   
   * Two main files: index.html and styles.css
   * Assets were compiled from Slack's Turing channel with the permission of each student
   * Employed breakpoints at 1024px, 768px, and 480 px for responsive design enjoyable on desktop, tablet, or mobile
+  * Image overlay to 'View Full Profile' which currently links to the student's GitHub profile
+  * Turing link goes to Turing.edu
+  * Code Wars button takes the user to the Code Wars website
 
 ## Technologies
   1. HTML, CSS
